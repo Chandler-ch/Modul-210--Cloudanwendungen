@@ -29,3 +29,5 @@ BACKEND_URL aus dem counter-config configMap
 Service für das Frontend mit dem Namen «counter-frontend» erstellen und auf den Port 3000 mappen
 
 Route für das Frontend erstellen
+
+Docker Pull Command: docker pull ghcr.io/rouven2/counter-frontend:v1
