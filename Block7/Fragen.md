@@ -26,6 +26,7 @@ Frontend creates requests to the Browser and the Browser creates requests to the
 
 ## How does the backend know to which database it needs to connect?
 Es connected zu der neuen Environment Variable die ich kreiert habe. DB_SERVICE_NAME
+Der Inhalt dieser Umgebungsvariable ist der Name des Services. Der Datenbank bei diesem Beispiel. Der Podname anzugeben wäre verheerend, da der Pod beim restarten eine andere Zahlenfolge hinter dem "mysql" hat. 
 
 --------------------------------------------------------------------------------------------------------------------
 
@@ -37,3 +38,4 @@ Der HPA kann nützlich sein, weil so automatisch gecheckt wird, wenn eine Überl
 
 ## What could be the risk of using a HPA?
 Es kann Buganfällig sein. Wenn man etwas falsch konfiguriert und plötzlich mit 100 Instanzen dasteht, aber in mysql zb nur 50 Connections vorprogrammiert hat, kann das zum Absturz führen. Deswegen sollte man die Applikation immer erst testen bevor man sie einsetzt.
+Es fügt komplexität hinzu.
