@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: counter-config
+data:
+  database-host: counter-database
+  backend-url: https://counter-backend-233756-roucha.apps.exoscale-ch-gva-2-0.appuio.cloud
