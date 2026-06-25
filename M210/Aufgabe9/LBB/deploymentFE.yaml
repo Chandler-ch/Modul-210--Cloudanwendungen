@@ -27,5 +27,3 @@ spec:
                 configMapKeyRef:
                   name: counter-config
                   key: backend-url
-
-
